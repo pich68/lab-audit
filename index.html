@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+<title>vApp Audit form</title>
+<link rel="stylesheet" type="text/css" href="main.css">
+
+<style>
+	.hidden	{
+		display:none;
+	}
+</style> -->
+
+<!-- <script type="text"/javascript">
+function showCata(){
+	var checkbox = document.getElementById("list_cata"); 
+	var hiddenList = document.getElementsByClassName("hidden");
+	
+	for(var i=0; i != hiddenList.length; i++){
+		if(checkbox.checked){
+			hiddenList[i].style.display = "block"; 
+		}
+	}
+} 
+</script>	-->	
+
+</head>
+<body>
+<!--April 27th 2018 Mark Pichler -->
+
+<div id="intro"></div>
+	<h1>Cork vCloud - vApp Audit</h1>
+	<p>The aim of this exercise is to record all vApps currently in the EMEA vCloud<br />additionally - we will collect details and technical information needed for users to deploy these vApps<br />
+	Existing library document can be found here</p>
+	<!--<a href="\\10.145.80.62\filestore\lab\vApp_Library_Document.pdf"></a> -->
+	<p1><a href="vApp_Library_Document.pdf">Link to library doc</a><br />
+	<a href="mailto:mpichler@opentext.com">Questions or problems with this form - contact Mark Pichler</a></p1>
+	<!--<br /><img src="meShanghailarge.jpg" height=150/> -->
+	<br /><img src="meShanghai.jpg"/>
+</div>
+
+<hr></hr>
+
+<div id="user_info">
+	<form id="vapp_audit_form1" action="savetofile.html" method="post" onSubmit="return validator();">
+		<label for="username">Lab username:</label>
+		<input type="text" id="username"/>
+		<br />
+		<label for="realname">Human name:</label>
+		<input type="text" id="realname"/>
+		<br />
+		<label for="email_address">email address:</label>
+		<input type="text" id="email_address"/>
+		<br />
+		<label for="vappname">vApp name:</label>
+		<input type="text" id="vappname" value="Enter the vApp name here"/>
+		<div id="description">
+		<textarea name="vapp_summary" rows="8" cols="40">
+		List each VM with the following information:
+		
+		1. What is the OS platform and version?
+	2. what software and version is installed on each VM?
+	3. what user/passwords are used
+	4. include useful install locations and links/URLs for admin
+		</textarea>
+		<br />
+</div>
+
+<div id="upload_doc">
+		<p1>If you already have a document with the details, then upload here.</p1>
+		<br />
+		<input type="file" name="upload_vapp_summary"/>
+</div>
+
+<form action="#">
+				<input type="checkbox" name="checkbox1" id="list_cata" onclick="showCata()" />
+				<label for="list_cata">Is this vApp catalogued?</label>
+
+
+<br />
+					<label class="hidden">Which catalogue is it in?</label>
+					<select class="hidden" id="slct1" name="slct_list1">
+						<option value=""></option>
+						<option value="DSE">DSE</option>
+						<option value="DCTM">DCTM</option>
+						<option value="BASE">BASE</option>
+					</select>			
+
+
+<div id="main_submit">
+		<br />
+		<input type="submit" value="Submit data">
+			<br /> 
+</div>
+</form>
+
+
+
+	
+
+	<script src="jscode.js"></script> -->
+</body>
+
+</html>
